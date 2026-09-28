@@ -1,0 +1,28 @@
+:root {
+  --color-sbo: #679de4;
+  --color-texto: #222222;
+  --color-fondo: #ffffff;
+  --espacio-base:16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0rem;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  padding: 0rem;
+}
+
+h1, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-primario);
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-primario);
+  text-align:center;
+}

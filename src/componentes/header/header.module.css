@@ -1,0 +1,31 @@
+header {
+    color: var(--color-sbo);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0.5%;
+    margin: 1.5%;
+    width: 95%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.nav {
+    margin-top: 0.5rem;
+}
+.navList {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 1%;
+    margin: 1%;
+}
+
+.navLink {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+}

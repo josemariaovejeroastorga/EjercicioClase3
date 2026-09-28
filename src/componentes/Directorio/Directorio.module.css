@@ -1,0 +1,36 @@
+.grid {
+  width:100%;  
+  background-color: white;
+    color: var(--color-texto);
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+.contenedor{
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  border: solid white;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px white;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.titulo{
+  width: 100%;
+  margin:0;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.4;
+  border:1px solid white;
+  border-radius:5px;
+  box-shadow: 0 2px 6px white;
+
+}
