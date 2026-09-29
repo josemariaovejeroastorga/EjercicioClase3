@@ -1,10 +1,10 @@
 [
   { "id": 0, "nombre": "José María Ovejero Astorga", "profesión": "Ingeniero civil",
-  "puesto":"Gerente de operaciones","imagen":"./FotografiaJm.jpg"},
+  "puesto":"Gerente de operaciones","imagen":"FotografiaJm.jpg"},
   { "id": 1, "nombre": "Danilo Bompadre", "profesión": "Ingeniero civil",
-  "puesto": "Gerente ejecutivo", "imagen":"./FotografiaDanilo.jpg"},
+  "puesto": "Gerente ejecutivo", "imagen":"FotografiaDanilo.jpg"},
   { "id": 2, "nombre": "Gustavo Stefanich","profesión":"Contador público nacional",
-  "puesto": "Gerente administrativo","imagen": "./FotografiaGustavo.png"},
+  "puesto": "Gerente administrativo","imagen": "FotografiaGustavo.png"},
   { "id": 3, "nombre": "Sebastián Romera","profesión":"Martillero público",
-  "puesto": "Gerente financiero", "imagen": "./FotografiaSebastian.jpg"}
+  "puesto": "Gerente financiero", "imagen": "FotografiaSebastian.jpg"}
 ]
