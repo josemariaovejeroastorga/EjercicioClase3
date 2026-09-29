@@ -9,7 +9,7 @@ function TarjetaDeProductos({ producto }) {
     <div className={styles.card}>
       <Favorito/>
         <img
-        src={producto.imagen}
+        src={`${import.meta.env.BASE_URL}${producto.imagen}`}
         alt={producto.nombre}
         className={styles.image}
         />

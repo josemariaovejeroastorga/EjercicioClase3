@@ -1,6 +1,6 @@
 [
-  { "id": 0, "nombre": "Demo", "moneda": "usd", "precio": 0, "imagen":"./demo.jpg"},
-  { "id": 1, "nombre": "Módulo Prueba", "moneda": "usd", "precio": 100, "imagen":"./modulo de prueba.jpg"},
-  { "id": 2, "nombre": "Módulo Standard", "moneda": "usd", "precio": 200, "imagen": "./modulo standard.jpg"},
-  { "id": 3, "nombre": "Módulo Premium", "moneda": "usd", "precio": 300, "imagen": "./modulo premium.jpg"}
+  { "id": 0, "nombre": "Demo", "moneda": "usd", "precio": 0, "imagen":"demo.jpg"},
+  { "id": 1, "nombre": "Módulo Prueba", "moneda": "usd", "precio": 100, "imagen":"modulo de prueba.jpg"},
+  { "id": 2, "nombre": "Módulo Standard", "moneda": "usd", "precio": 200, "imagen": "modulo standard.jpg"},
+  { "id": 3, "nombre": "Módulo Premium", "moneda": "usd", "precio": 300, "imagen": "modulo premium.jpg"}
 ]

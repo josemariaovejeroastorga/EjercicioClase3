@@ -8,7 +8,7 @@ function Credenciales({ integrantes }) {
     <div className={styles.credenciales}>
       <Favorito/>
         <img
-        src={integrantes.imagen}
+        src={`${import.meta.env.BASE_URL}${integrantes.imagen}`}
         alt={integrantes.nombre}
         className={styles.image}
         />
