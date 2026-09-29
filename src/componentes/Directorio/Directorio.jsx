@@ -6,7 +6,7 @@ const [integrantes, setIntegrantes] = useState([]);
 const [error, setError] = useState(null);
 const [cargando, setCargando] = useState(true);
 useEffect(() => {
-fetch('/data/integrantes.json')
+fetch(`${import.meta.env.BASE_URL}data/integrantes.json`)
 .then((respuesta) => {
 if (!respuesta.ok) {
 throw new Error('No se pudo cargar la información de los integrantes');
