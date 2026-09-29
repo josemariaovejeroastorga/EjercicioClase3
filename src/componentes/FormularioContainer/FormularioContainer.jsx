@@ -16,7 +16,7 @@ function FormularioContainer () {
             }; 
         const handleChangeOutput = (evento) => {
             evento.preventDefault();
-            console.log('Enviando los siguientes datos a la API, datosForm')};
+            console.log('Enviando los siguientes datos a la API', datosForm)};
         return (
             <FormularioProducto
             datosForm={datosForm}

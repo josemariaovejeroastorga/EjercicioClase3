@@ -1,13 +1,15 @@
-function FormularioProducto (datosForm, handleChangeInput, handleChangeOutput) {
-    return
-    <form Onsubmit={handleChangeInput}>
+function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput}) {
+    return(
+    <form onSubmit={handleChangeOutput}>
         <h3>Agregar nuevo producto</h3>
         <div>
             <label htmlFor="">Id</label>
             <input 
                 type="text"
-                onChange={handleChangeInput}
+                name="id"
                 value={datosForm.id}
+                onChange={handleChangeInput}
+                
             />
         </div>
         <div>
@@ -46,5 +48,5 @@ function FormularioProducto (datosForm, handleChangeInput, handleChangeOutput) {
         </div>
             <button type="submit">Guardar Producto</button>
     </form>
-}
+)}
 export default FormularioProducto
