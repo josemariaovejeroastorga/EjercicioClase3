@@ -3,8 +3,9 @@ function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput})
     <form onSubmit={handleChangeOutput}>
         <h3>Agregar nuevo producto</h3>
         <div>
-            <label htmlFor="">Id</label>
+            <label htmlFor="id">Id</label>
             <input 
+                id="id"
                 type="text"
                 name="id"
                 value={datosForm.id}
@@ -13,8 +14,9 @@ function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput})
             />
         </div>
         <div>
-            <label htmlFor="">Nombre del Producto</label>
+            <label htmlFor="nombre">Nombre del Producto</label>
             <input
+                id="nombre"
                 type="text"
                 name="nombre"
                 placeholder="Teclado Mecánico"
@@ -23,24 +25,30 @@ function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput})
             />
         </div>
         <div>
-            <label>Precio:</label>
-        <input   type="number"
-                 placeholder="Ej: 95"
+            <label htmlFor="precio">Precio</label>
+            <input
+                id="precio"
+                type="number"
+                placeholder="Ej: 95"
                 name="precio"
                 value={datosForm.precio}
                 onChange={handleChangeInput} />
         </div>
         <div>
-            <label>Stock:</label>
-        <input  type="number"
+            <label htmlFor="stock">Stock:</label>
+        <input  
+                id="stock"
+                type="number"
                 placeholder="Ej: 5"
                 name="stock"
                 value={datosForm.stock}
                 onChange={handleChangeInput} />
         </div>
         <div>
-            <label>Imagen:</label>
-        <input  type="file" 
+            <label htmlFor="imagen">Imagen:</label>
+        <input  
+                id="imagen"
+                type="file" 
                 placeholder="avatar.jpg"
                 name="imagen"
                 value={datosForm.imagen}
