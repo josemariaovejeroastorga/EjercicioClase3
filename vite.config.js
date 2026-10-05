@@ -1,4 +1,4 @@
 import {defineConfig} from "vite"
 export default defineConfig({
-base: process.env.GITHUB_PAGES ? '/EjercicioClase3/' : '/',
+base: '/EjercicioClase3/',
 })
