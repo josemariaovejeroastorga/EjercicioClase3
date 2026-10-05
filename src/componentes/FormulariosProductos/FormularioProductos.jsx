@@ -11,7 +11,7 @@ function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput})
                                 id="id"
                                 type="text"
                                 name="id"
-                                placeholder="01"
+                                placeholder="Pre"
                                 value={datosForm.id}
                                 onChange={handleChangeInput}
                             />
@@ -23,7 +23,7 @@ function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput})
                                 id="nombre"
                                 type="text"
                                 name="nombre"
-                                placeholder="Teclado Mecánico"
+                                placeholder="Módulo Premium"
                                 value={datosForm.nombre}
                                 onChange={handleChangeInput}
                             />
@@ -33,7 +33,7 @@ function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput})
                             <input
                                 id="precio"
                                 type="number"
-                                placeholder="Ej: 95"
+                                placeholder="Ej: 205"
                                 name="precio"
                                 value={datosForm.precio}
                                 onChange={handleChangeInput}
@@ -44,7 +44,7 @@ function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput})
                             <input  
                                 id="stock"
                                 type="number"
-                                placeholder="Ej: 5"
+                                placeholder="Ej: 75"
                                 name="stock"
                                 value={datosForm.stock}
                                 onChange={handleChangeInput}
@@ -55,7 +55,7 @@ function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput})
                             <input  
                                 id="imagen"
                                 type="file" 
-                                placeholder="avatar.jpg"
+                                placeholder="módulo premium.jpg"
                                 name="imagen"
                                 value={datosForm.imagen}
                                 onChange={handleChangeInput}
