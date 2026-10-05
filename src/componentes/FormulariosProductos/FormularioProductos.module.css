@@ -1,0 +1,56 @@
+.titulo{
+        color:var(--color-sbo);
+        text-align: center;
+        font-size: 37.5px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 12px 12px;
+    padding: 1.7%;
+    margin: 45px;
+    gap: 12px;
+
+}
+.formulario .campo {
+    display: flex;
+    flex-direction: row;
+    outline: 2px solid white;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.campo label {
+    width: 25%;
+    border-radius: 3.7px;
+    border-color: white;
+    box-shadow: 3px 3px 3px;
+}
+
+.campo input {
+    flex: 1;
+    width: 75%;
+    border-color: white;
+    border-radius: 3.7px;
+    box-shadow: 3px 3px 3px;
+}
+.campo input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(45, 10, 221, 0.35);
+}
+.divbutton{
+    display: flex;
+    justify-content: center;
+    background-color: color var(--color-sbo);
+    border-color: white;
+    border-radius: 5px;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 50px;
+}
