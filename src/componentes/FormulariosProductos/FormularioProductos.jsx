@@ -1,5 +1,5 @@
 import styles from "./FormularioProductos.module.css"
-function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput}) {
+function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput, handleChangeImage}) {
     return(
         
     <form onSubmit={handleChangeOutput}>
@@ -58,7 +58,7 @@ function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput})
                                 placeholder="módulo premium.jpg"
                                 name="imagen"
                                 value={datosForm.imagen}
-                                onChange={handleChangeInput}
+                                onChange={handleChangeImage}
                             />
                 </div>
             
