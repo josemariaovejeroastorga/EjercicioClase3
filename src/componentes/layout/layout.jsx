@@ -1,12 +1,16 @@
 import Footer from '../footer/footer'
 import Header from '../header/header'
 import Cuerpo from '../Cuerpo/Cuerpo'
-function Layout({children}) {
+import {Outlet} from 'react-router-dom'
+
+function Layout() {
     return(
         <div>
             <Header/>
             <Cuerpo/>
-            {children}
+            <main>
+                <Outlet />
+            </main>
             <Footer/>
         </div>
     )

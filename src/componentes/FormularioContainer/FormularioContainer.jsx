@@ -10,6 +10,7 @@ function FormularioContainer() {
         stock: "",
     });
     const [imageFile, setImageFile] = useState(null)
+    const [loading, setLoading] = useState(false)
     const handleChangeInput = (evento) => {
         const { name, value } = evento.target;
         setDatosForm({
@@ -25,6 +26,8 @@ function FormularioContainer() {
         alert("Por favor, selecciona una imagen para el producto.");
         return;
     }
+    setLoading(true);
+
     const apiKey = '6ffdd4bc3d0d4bd515278ba6ab60cff6';
     const formData = new FormData();
     formData.append('image', imageFile);
@@ -36,22 +39,21 @@ function FormularioContainer() {
             body: formData,
         });
         const datosImgbb = await respuestaImgbb.json();
-        if (datosImgbb.success) {
+        if (!respuestaImgbb.ok || !datosImgbb.success) {
+            throw new Error("La subida de la imagen a ImgBB falló")};
             console.log("Imagen subida con éxito. URL:", datosImgbb.data.url);
-            const productoCompleto = {
+        const productoCompleto = {
                 ...datosForm,
                 urlImagen: datosImgbb.data.url
             };
-
-            console.log('Enviando los siguientes datos COMPLETOS a la API:',
+        
+        console.log('Enviando los siguientes datos COMPLETOS a la API:',
                 productoCompleto);
-        } else {
-            throw new Error('La subida de la imagen a Imgbb falló.');
-        }
     } catch (error) {
         console.error("Error en el proceso de envío:", error);
         alert("Hubo un error al subir la imagen. Por favor, intentá de nuevo.");
     }
+    finally {setLoading(false)};
 };
 
 return (
@@ -60,6 +62,7 @@ return (
         handleChangeInput={handleChangeInput}
         handleChangeOutput={handleChangeOutput}
         handleChangeImage={handleChangeImage}
+        loading={loading}
     />
 );
 }   

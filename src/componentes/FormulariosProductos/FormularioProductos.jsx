@@ -1,7 +1,10 @@
 import styles from "./FormularioProductos.module.css"
-function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput, handleChangeImage}) {
+function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput, handleChangeImage, loading}) {
     return(
-        
+    <>
+    {loading && (
+        <p>Subiendo imagen, por favor esperá ...</p>
+    )}
     <form onSubmit={handleChangeOutput}>
         <h3 className={styles.titulo}>Agregar un nuevo producto</h3>
         <div className={styles.formulario}>
@@ -67,5 +70,6 @@ function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput, 
             <button type="submit">Guardar Producto</button>
         </div>
     </form>
+    </>
 )}
 export default FormularioProducto
