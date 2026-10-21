@@ -67,7 +67,9 @@ function FormularioProducto ({datosForm, handleChangeInput, handleChangeOutput, 
             
         </div>
         <div className={styles.divbutton}>
-            <button type="submit">Guardar Producto</button>
+            <button type="submit"
+              disable={loading}>{loading ? "Subiendo imagen ..." : "Agregar producto"}
+            </button>
         </div>
     </form>
     </>
