@@ -4,7 +4,8 @@ import Productos from '../Productos/Productos'
 import FormularioContainer from '../FormularioContainer/FormularioContainer';
 import { Routes, Route } from 'react-router-dom';
 import Directorio from '../Directorio/Directorio';
-import FormularioProducto from '../FormulariosProductos/FormularioProductos'
+import DetalleItem from '../DetallesItems/DetallesItems';
+import Cart from '../cart/Cart';
 function App () {
     return (
         <Routes>
@@ -16,6 +17,8 @@ function App () {
                                                     Mensaje={'NUESTRO DIRECTORIO'}/>}/>
                 <Route path="/componentes/FormularioContainer" element={<FormularioContainer
                                                 Mensaje={'AGREGAR NUEVO PRODUCTO'}/>}/>
+                <Route path="/componentes/DetallesItems/:id" element={<DetalleItem />}/>
+                <Route path="/componentes/Cart" element={<Cart />}/>
             </Route>
         </Routes>);
 }

@@ -1,6 +1,9 @@
 import styles from './header.module.css';
 import {Link} from 'react-router-dom';
+import { useCart } from '../Context/CartContext';
 function Header() {
+    const {getCartQuantity} = useCart();
+    const totalItems = getCartQuantity();
     return(
         <header className={styles.header}>
             <h1>SBO - SUMANDO BUENAS OBRAS</h1>
@@ -11,6 +14,7 @@ function Header() {
                     <li><Link to="/componentes/Productos" className={styles.navLink}>Productos</Link></li>
                     <li><Link to="/componentes/Directorio" className={styles.navLink}>Contacto</Link></li>
                     <li><Link to="/componentes/FormularioContainer" className={styles.navLink}>Formulario</Link></li>
+                    <li><Link to="/componentes/Cart" className={styles.navLink}>Carrito 🛒{totalItems > 0 && <span className={styles.cartBadge}>{totalItems}</span> }</Link></li>
                 </ul>
             </nav>
         </header>
