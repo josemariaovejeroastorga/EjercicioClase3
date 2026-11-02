@@ -5,7 +5,7 @@ import FormularioContainer from '../FormularioContainer/FormularioContainer';
 import { Routes, Route } from 'react-router-dom';
 import Directorio from '../Directorio/Directorio';
 import DetalleItem from '../DetallesItems/DetallesItems';
-import Cart from '../cart/Cart';
+import Cart from '../Cart/Cart';
 function App () {
     return (
         <Routes>
