@@ -16,7 +16,7 @@ return (
   <div className={styles.card}>
     <Favorito />
     <img
-      src={`${import.meta.env.BASE_URL}${producto.imagen}`}
+      src={producto.imagen}
       alt={producto.nombre}
       className={styles.image}
     />
